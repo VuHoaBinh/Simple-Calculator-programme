@@ -17,45 +17,45 @@ def button_clear():
 def button_add():
 	first_number = e.get()
 	global f_num 
-	global measure
-	measure = "add"
+	global meansure
+	meansure = "add"
 	f_num = int(first_number)
 	e.delete(0, END)
 
 def button_minus():
 	first_number = e.get()
 	global f_num 
-	global measure
-	measure = "minus"
+	global meansure
+	meansure = "minus"
 	f_num = int(first_number)
 	e.delete(0, END)
 
 def button_multiply():
 	first_number = e.get()
 	global f_num 
-	global measure
-	measure = "multiply"
+	global meansure
+	meansure = "multiply"
 	f_num = int(first_number)
 	e.delete(0, END)
 
 def button_divide():
 	first_number = e.get()
 	global f_num 
-	global measure
-	measure = "divide"
+	global meansure
+	meansure = "divide"
 	f_num = int(first_number)
 	e.delete(0, END)
 
 def button_equal():
 	second_number = e.get()
 	e.delete(0,END)
-	if measure == "add":
+	if meansure == "add":
 		e.insert(0, f_num + int(second_number))
-	elif measure == "minus":
+	elif meansure == "minus":
 		e.insert(0, f_num - int(second_number))
-	elif measure == "multiply":
+	elif meansure == "multiply":
 		e.insert(0, f_num * int(second_number))
-	elif measure == "divide":
+	elif meansure == "divide":
 		e.insert(0, f_num / int(second_number))
 
 
